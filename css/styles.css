@@ -1,0 +1,252 @@
+body {
+  margin-bottom: 300px;
+}
+section {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 40px;
+}
+h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #517D8A;
+}
+.descriptions {
+  font-size: 14px;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+}
+.text {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+}
+
+/*welcome*/
+.flex-container-welc {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two {
+  width: 22%;
+  height: auto;
+  margin-right: 12px;
+}
+.three {
+  width: 35%;
+  height: auto;
+  margin-right: 1%;
+}
+.one {
+  width: 40%;
+  height: auto;
+}
+img.welcome {
+  width: 100%;
+}
+
+/*features*/
+.features {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.flex-container-card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  background-color: #D4E7C5;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 20px;
+}
+.flex-container-card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  background-color: #D0CEDC;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 20px;
+}
+.centeredimg {
+  width: 65%;
+}
+.fimg {
+  width: 100%;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*schedule of events*/
+/*schedule tabs*/
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  font-family: sans-serif;
+}
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid #517D8A;
+}
+.tabs__radio {
+  display: none;
+}
+.tabs__content {
+  order: 1;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  /**color: #009578;
+  border-bottom: 2px solid #009578;**/
+  color: white;
+  background-color: #517D8A;
+}
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+}
+
+/*cards*/
+.card1 {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  border: 1px solid #aaaaaa;
+}
+.card2 {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  border: 1px solid #aaaaaa;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 75% auto;
+  background-color: white;
+  border-left: 5px solid #534A82;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 75% auto;
+  background-color: white;
+  border-left: 5px solid #B85338;
+}
+.col1 {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+.col2 {
+  display: flex;
+  background-color: #dfdfdf;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0px;
+}
+.cardtext {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0px;
+}
+.seemore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.dropdown {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.eventgrid {
+  display: grid;
+  grid-template-columns: 80px 25px auto;
+}
+a.event1 {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-left: 5px solid #534A82;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+}
+a.event2 {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-left: 5px solid #B85338;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+}
+/*toggle cards*/
+.collapse{
+  cursor: pointer;
+  display: block;
+}
+.collapse + input{
+  display: none; /* hide the checkboxes */
+}
+.collapse + input + div{
+  display:none;
+}
+.collapse + input:checked + div{
+  display:block;
+}
+/*hover card highlight*/
+div.card1:hover {
+  border: 1px solid #534A82;
+}
+div.card2:hover {
+  border: 1px solid #B85338;
+}
+a.event1:hover {
+  border-top: 1px solid #534A82;
+  border-bottom: 1px solid #534A82;
+  border-right: 1px solid #534A82;
+}
+a.event2:hover {
+  border-top: 1px solid #B85338;
+  border-bottom: 1px solid #B85338;
+  border-right: 1px solid #B85338;
+}
