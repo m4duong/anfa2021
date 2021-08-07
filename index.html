@@ -15,6 +15,10 @@
       <link 
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
+      <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="css/styles.css" />
       <link rel="stylesheet" type="text/css" href="css/navstyle.css" />
       <link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -24,15 +28,15 @@
       <section>
         <h1>Welcome</h1>
         
-        <div class="flex-container-welc">
-          <div class="two">
+        <div class="d-flex welcome">
+          <div class="one">
             <img class="welcome" src="images/DavidKirsh.png" alt="ANFA President David Kirsh">
             <p class="descriptions">
               ANFA President David Kirsh
             </p>
           </div>
 
-          <div class="three">
+          <div class="two">
             <p class="text">
               Kirsh's download on quanitified buildings etc etc
               <br>
@@ -46,8 +50,8 @@
             </p>
           </div>
 
-          <!---at a glance-->
-          <div class="one">
+          <!---tentative schedule-->
+          <div class="three">
             <a href="tentative schedule/tentative schedule.html" class="button">Tentative Schedule</a>
           </div>
         </div>
@@ -56,78 +60,71 @@
       <section>
         <h1>Live Features and Panels</h1>
 
-        <div class="features">
-          <div class="flex-container-card1">
-            <div class="centeredimg">
-              <img class="fimg" src="images/KateJeffrey.png">
-            </div>
-            <div>
+        <div class="d-flex flex-wrap features">
+          
+          <div class="card f1">
+            <img class="fimg" src="images/KateJeffrey.png">
+            <div class="card-body">
               <h3>Kate Jeffrey</h3>
               <p class="text">
                 Professor of Behavioural Neuroscience at University College London
                 <br><br>
-                Processing Complex, Concurrent, Multi-Modal, and Multi-Rate Data Through Mobile Brain/Body Imaging
+                Title TBA
                 <br><br>
-                Sat, September 18 @ TIME
+                Fri, September 17 @ 9:00 am PST
               </p>
               <a class="text" href="#">Watch Video</a>
             </div>
           </div>
 
-          <div class="flex-container-card2">
-            <div class="centeredimg">
-              <img class="fimg" src="images/NiallMcLaughlin.png">
-            </div>
-            <div>
+          <div class="card f2">
+            <img class="fimg" src="images/NiallMcLaughlin.png">
+            <div class="card-body">
               <h3>Niall McLaughlin</h3>
               <p class="text">
                 Practicing Architect and Professor of Architectural Practice 
                 at the Bartlett School of Architecture, University College London
                 <br><br>
-                Processing Complex, Concurrent, Multi-Modal, and Multi-Rate Data Through Mobile Brain/Body Imaging
+                Title TBA
                 <br><br>
-                Sat, September 18 @ TIME
+                Fri, September 17 @ 9:00 am PST
               </p>
               <a class="text" href="#">Watch Video</a>
             </div>
           </div>
-        </div>
-
-        <div class="features">
-          <div class="flex-container-card2">
-            <div class="centeredimg">
-              <img class="fimg" src="images/PatrikSchumacher.png">
-            </div>
-            <div>
+          
+          <div class="card f2">
+            <img class="fimg" src="images/PatrikSchumacher.png">
+            <div class="card-body">
               <h3>Patrik Schumacher</h3>
               <p class="text">
                 Principal Architect of Zaha Hadid Architects
                 <br><br>
-                Processing Complex, Concurrent, Multi-Modal, and Multi-Rate Data Through Mobile Brain/Body Imaging
+                Title TBA
                 <br><br>
-                Sat, September 18 @ TIME
+                Sat, September 18 @ 9:00 am PST
               </p>
               <a class="text" href="#">Watch Video</a>
             </div>
           </div>
-
-          <div class="flex-container-card1">
-            <div class="centeredimg">
-              <img class="fimg" src="images/NickTyler.png">
-            </div>
-            <div>
+          
+          <div class="card f1">
+            <img class="fimg" src="images/NickTyler.png">
+            <div class="card-body">
               <h3>Nick Tyler</h3>
               <p class="text">
                 Director of the UC London Centre for Transport Studies & Chadwick Chair of Civil Engineering
                 <br><br>
-                Processing Complex, Concurrent, Multi-Modal, and Multi-Rate Data Through Mobile Brain/Body Imaging
+                Title TBA
                 <br><br>
-                Sat, September 18 @ TIME
+                Thur, September 16 @ 9:00 am PST
               </p>
               <a class="text" href="#">Watch Video</a>
             </div>
           </div>
         </div>
+
+
       </section>
 
       <section>
@@ -135,217 +132,796 @@
 
         <div class="tabs">
           
-          <!--thurs, sept 16-->
+          <!--thur, sept 16-->
           <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
-          <label for="tab1" class="tabs__label">Thurs, Sept 16</label>
+          <label for="tab1" class="tabs__label">Thur, Sept 16</label>
           <div class="tabs__content">
             
             <!--keynote card-->
-            <div class="card1">
-              <!--main-->
-              <label class="collapse" for="_1">
-                <div class="grid-container1">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      Opening & Keynote - A: Chieko Asakawa: 
-                      See What I Mean: Making Waves with the Blind
-                    </p>
-                    <p class="cardtext">Keynote</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">9:00 am</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 keynote">
+                  <!--main-->
+                  <label class="collapse" for="_11">
+                    <div class="grid-container1">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Featured Speaker: Nick Tyler
+                        </p>
+                        <p class="cardtext">Keynote</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
+                  </label>
+                  <input id="_11" type="checkbox"> 
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event1" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Keynote</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Nick Tyler</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="event1" href="#">
+                      <p class="subtitle">
+                        Live Discussion
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Keynote</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-              </label>
-              <input id="_1" type="checkbox"> 
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event1" href="#">
-                  <p class="subtitle">
-                    See What I Mean: Making Waves with the Blind (live keynote)
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Keynote</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Chieko Asakawa</p>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
 
-            <!--talk card-->
-            <div class="card2">
-              <!--main-->
-              <label class="collapse" for="_2">
-                <div class="grid-container2">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                    </p>
-                    <p class="cardtext">Talk</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
+            <!--paper card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">10:15 am</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 paper">
+                  <!--main-->
+                  <label class="collapse" for="_12">
+                    <div class="grid-container2">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Paper Session I: Lighting & Vision
+                        </p>
+                        <p class="cardtext">Talk</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
+                  </label>
+                  <input id="_12" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Biometric Architecture: Impact of Available Interior Daylighting on Photoentrainment
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Ali R. Heshmati, Barbara Szybinska Matusiak, Håvard Kallestad</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Using VR to Assess Visual Attraction and Perceived Interest in Daylit Scene Variation 
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Caroline Karmann, Kynthia Chamilothori, Sanne Schoenmakers</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Comparing Architecture Students’ Visual Perception Between Abstract and Detailed Plans  
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Yesol Park, John Gero, Jakub Krukar, Martin Brösamle, Christoph Hölscher</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Glare Assessment in a Daylit Workplace from a Physiological Perspective  
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Sneha Jain, Jan Wienold, Marilyne Andersen</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Paper Session I: Q&A
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+
                   </div>
                 </div>
-              </label>
-              <input id="_2" type="checkbox">
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Michael A. Arbib</p>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    Live Discussion
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Moderator Name</p>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
+          
+            <!--panel card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">12:45 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 panel">
+                  <!--main-->
+                  <label class="collapse" for="_14">
+                    <div class="grid-container3">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Panel A: TBA
+                        </p>
+                        <p class="cardtext">Panel</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_14" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event3" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">David Kirsh, Virginia de Sa, Andrea Chiba</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event3" href="#">
+                      <p class="subtitle">
+                        Panel A: Q&A
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--poster card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">2:15 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 poster">
+                  <!--main-->
+                  <label class="collapse" for="_15">
+                    <div class="grid-container4">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Poster Session I
+                        </p>
+                        <p class="cardtext">Poster</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_15" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event4" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Authors TBA</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--paper card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">3:45 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 paper">
+                  <!--main-->
+                  <label class="collapse" for="_16">
+                    <div class="grid-container2">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Paper Session II: Computing & Data
+                        </p>
+                        <p class="cardtext">Talk</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_16" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        The Language of Data in the Exhibition Discourse: Intertwining Architects, Curators, Artists, Scientists and Users 
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Elisabetta Canepa, Chiara Centanaro, Valeria Minucciani</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Tangible Reverberations of Mind  
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Mona Ghandi, Marcus Blaisdell, Mohamed Ismail</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        A Novel Inclusive Method in Architectural Behavioral Mapping Based on Neuro-Cognitive, Climatic and Spatial Data Correlates  
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">S. Mohammed Safavi, Yasaman Gholami, Farshad Askari, Kaveh Fattahi, Mohammad Nami, Ali-Mohammad Kamali, Mohammad Amin Soltani-Sarvestani</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Paper Session II: Q&A 
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          
           </div>
 
           <!--fri, sept 17-->
           <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
           <label for="tab2" class="tabs__label">Fri, Sept 17</label>
           <div class="tabs__content">
-            <!--talk card-->
-            <div class="card2">
-              <!--main-->
-              <label class="collapse" for="_3">
-                <div class="grid-container2">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                    </p>
-                    <p class="cardtext">Talk</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
+           
+            <!--keynote card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">9:00 am</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 keynote">
+                  <!--main-->
+                  <label class="collapse" for="_21">
+                    <div class="grid-container1">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Featured Speaker: Niall McLaughlin & Kate Jeffrey
+                        </p>
+                        <p class="cardtext">Keynote</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
+                  </label>
+                  <input id="_21" type="checkbox"> 
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event1" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Keynote</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Nick Tyler, Kate Jeffrey</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="event1" href="#">
+                      <p class="subtitle">
+                        Live Discussion
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Keynote</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-              </label>
-              <input id="_3" type="checkbox">
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Michael A. Arbib</p>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    Live Discussion
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Moderator Name</p>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
 
-            <!--keynote card-->
-            <div class="card1">
-              <!--main-->
-              <label class="collapse" for="_4">
-                <div class="grid-container1">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      Opening & Keynote - A: Chieko Asakawa: 
-                      See What I Mean: Making Waves with the Blind
-                    </p>
-                    <p class="cardtext">Keynote</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
+            <!--paper card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">10:30 am</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 paper">
+                  <!--main-->
+                  <label class="collapse" for="_22">
+                    <div class="grid-container2">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Paper Session III: Spatial Analysis, Spacemaking and More
+                        </p>
+                        <p class="cardtext">Talk</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
+                  </label>
+                  <input id="_22" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Augmenting Spatial Perception With Artificial Neural Networks to Build Synthetic Cognitive Maps
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Matheus Stancati</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        The Effect of Spatial Ambiguity on Creative Modes of Thinking
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Rebecca Milne, Bob Condia, Hanna Negami</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Learning from Human Behavior: An Empirical Study of Flows and Occupancy Patterns in Indoor Environments
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Krister Jens, David Kirsh</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Paper Session III: Q&A
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+
                   </div>
                 </div>
-              </label>
-              <input id="_4" type="checkbox"> 
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event1" href="#">
-                  <p class="subtitle">
-                    See What I Mean: Making Waves with the Blind (live keynote)
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Keynote</p>
+              </div>
+            </div>
+          
+            <!--panel card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">1:00 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 panel">
+                  <!--main-->
+                  <label class="collapse" for="_24">
+                    <div class="grid-container3">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Panel B: TBA
+                        </p>
+                        <p class="cardtext">Panel</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Chieko Asakawa</p>
-                    </div>
+                  </label>
+                  <input id="_24" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event3" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Upali Nanda, Nicholaus Watkin, Daniel Davis</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event3" href="#">
+                      <p class="subtitle">
+                        Panel B: Q&A
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator: Fred Marks</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
-                </a>
+                </div>
+              </div>
+            </div>
+
+            <!--poster card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">2:30 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 poster">
+                  <!--main-->
+                  <label class="collapse" for="_25">
+                    <div class="grid-container4">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Poster Session II
+                        </p>
+                        <p class="cardtext">Poster</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_25" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event4" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Authors TBA</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--paper card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">4:00 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 paper">
+                  <!--main-->
+                  <label class="collapse" for="_26">
+                    <div class="grid-container2">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Paper Session IV: Human Experience and Data Collection
+                        </p>
+                        <p class="cardtext">Talk</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_26" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Using Wearables in Design Practice to Collect Human-Environment Data
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Meredith Banasiak</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Mobile Mapping – Mapping Indoor Environmental Quality Data Through Photogrammetry  
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Adam Heisserer</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Classifying Human Experience in Virtual Environments Using Effective Sensor Signals
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Zhengbo Zou, Semiha Ergan</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Paper Session IV: Q&A 
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -354,166 +930,357 @@
           <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
           <label for="tab3" class="tabs__label">Sat, Sept 18</label>
           <div class="tabs__content">
-            <!--talk card-->
-            <div class="card2">
-              <!--main-->
-              <label class="collapse" for="_5">
-                <div class="grid-container2">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                    </p>
-                    <p class="cardtext">Talk</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
-                    </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
-                  </div>
-                </div>
-              </label>
-              <input id="_5" type="checkbox">
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Michael A. Arbib</p>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    Live Discussion
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Moderator Name</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
+            
             <!--keynote card-->
-            <div class="card1">
-              <!--main-->
-              <label class="collapse" for="_6">
-                <div class="grid-container1">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      Opening & Keynote - A: Chieko Asakawa: 
-                      See What I Mean: Making Waves with the Blind
-                    </p>
-                    <p class="cardtext">Keynote</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">9:00 am</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 keynote">
+                  <!--main-->
+                  <label class="collapse" for="_31">
+                    <div class="grid-container1">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Featured Speaker: Patrik Schumacher
+                        </p>
+                        <p class="cardtext">Keynote</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
+                  </label>
+                  <input id="_31" type="checkbox"> 
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event1" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Keynote</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Patrik Schumacher</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="event1" href="#">
+                      <p class="subtitle">
+                        Live Discussion
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Keynote</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-              </label>
-              <input id="_6" type="checkbox"> 
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event1" href="#">
-                  <p class="subtitle">
-                    See What I Mean: Making Waves with the Blind (live keynote)
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Keynote</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Chieko Asakawa</p>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
 
-            <!--talk card-->
-            <div class="card2">
-              <!--main-->
-              <label class="collapse" for="_7">
-                <div class="grid-container2">
-                  <div class="grid-item col1">
-                    <p class="title">
-                      From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                    </p>
-                    <p class="cardtext">Talk</p>
-                    <div class="seemore">
-                      <p class="cardtext">See more</p>
-                      <p class="cardtext"><span class="material-icons">expand_more</span></p>
+            <!--paper card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">10:30 am</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 paper">
+                  <!--main-->
+                  <label class="collapse" for="_32">
+                    <div class="grid-container2">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Paper Session V: Virtual Reality
+                        </p>
+                        <p class="cardtext">Talk</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-item col2">
-                    <p class="cardtext">Zoom Room</p>
+                  </label>
+                  <input id="_32" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Assessing Architectural Designs Through Virtual Reality and Functional Near-Infrared Spectroscopy: A Perceived Retail Crowding Case Study
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Luis Mejia-Puig, Ekaterina Korneva, Tilanka Chandrasekera</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Architectural Forms’ Impact on Perceived Valence and Arousal of Virtual Environments
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Paolo Presti, Davide Ruzzon, Fausto Caruana, Giovanni Vecchiato</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        VR Investigations of Spatial Awareness in High-Rise Office Design
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Teodora Espinoza, Tobias Loetscher, Sean Pickersgill</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Design-Neuroscience Alliance for Mitigating Cybersickness Symptoms in 3D Immersive Experience Designed for Head-Mounted Displays
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Felipe Servilha Moreno, Rachel Zuanon</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Paper Session V: Q&A
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+
                   </div>
                 </div>
-              </label>
-              <input id="_7" type="checkbox">
-              <!--dropdown-->
-              <div class="dropdown">
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    From Sensing Places to Design Spaces: Linking Wayfinding, Memory, and Imagination
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Michael A. Arbib</p>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="event2" href="#">
-                  <p class="subtitle">
-                    Live Discussion
-                  </p>
-                  <div class="eventgrid">
-                    <div class="grid-item">
-                      <p class="cardtext">Talk</p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext"><span class="material-icons">person_outline</span></p>
-                    </div>
-                    <div class="grid-item">
-                      <p class="cardtext">Moderator Name</p>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
+
+            <!--poster card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">1:00 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 poster">
+                  <!--main-->
+                  <label class="collapse" for="_35">
+                    <div class="grid-container4">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Poster Session III
+                        </p>
+                        <p class="cardtext">Poster</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_35" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event4" href="#">
+                      <p class="subtitle">
+                        Title TBA
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Panel</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Authors TBA</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--paper card-->
+            <div class="row slot">
+              <div class="col-sm-2 time">
+                <p class="cardtext">2:30 pm</p>
+              </div>
+              <div class="col-sm-10">
+                <div class="card1 paper">
+                  <!--main-->
+                  <label class="collapse" for="_36">
+                    <div class="grid-container2">
+                      <div class="grid-item col1">
+                        <p class="title">
+                          Paper Session VI: A Post-COVID World
+                        </p>
+                        <p class="cardtext">Talk</p>
+                        <div class="seemore">
+                          <p class="cardtext">See more</p>
+                          <p class="cardtext"><span class="material-icons">expand_more</span></p>
+                        </div>
+                      </div>
+                      <div class="grid-item col2">
+                        <p class="cardtext">Zoom Room</p>
+                      </div>
+                    </div>
+                  </label>
+                  <input id="_36" type="checkbox">
+                  <!--dropdown-->
+                  <div class="dropdown">
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Convolutions of Architecture - the Problem of Interior and Exterior Conditions in Designing With Graph Convolutional Neural Networks
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Matias del Campo, Sandra Manninger</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Examining the Radically Changing Perceptions of Pediatric Inpatients in an Oncology Healthcare Setting
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Nevşet Gül Çanakçıoğlu, Alper Unlu</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        UCSD Live-Learn Lab: A Campus Where Students Link Built Environment to Health & Wellbeing Outcomes
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Upali Nanda, Lakshmi Chilukuri, Eduardo Macagno, Anthony Jakubisin, Matthew Smith, Melissa Hoelting, Babak Soleimani</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Envisioning the Future of Work for Ford Motor Company: A "Brain to Building" Discussion
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Jennifer Kolstad, Cathy Clark, Angela Ramer, Richard Smith</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="event2" href="#">
+                      <p class="subtitle">
+                        Paper Session IV: Q&A 
+                      </p>
+                      <div class="eventgrid">
+                        <div class="grid-item">
+                          <p class="cardtext">Paper</p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext"><span class="material-icons">person_outline</span></p>
+                        </div>
+                        <div class="grid-item">
+                          <p class="cardtext">Moderator TBA</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

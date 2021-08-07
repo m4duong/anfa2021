@@ -16,16 +16,16 @@ h1 {
   padding-bottom: 5px;
   border-bottom-style: solid;
   border-bottom-width: 5px;
-  border-bottom-color: #517D8A;
+  border-bottom-color: #534A82;
 }
 .descriptions {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
 }
 .text {
-  font-size: 17px;
+  font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
 }
@@ -41,25 +41,24 @@ h1 {
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*welcome*/
-.flex-container-welc {
+.welcome {
   display: flex;
   flex-wrap: wrap;
 }
-.two {
-  width: 22%;
+.one {
+  width: 23%;
   height: auto;
   margin-right: 12px;
 }
-.three {
+.two {
   width: 35%;
   height: auto;
-  margin-right: 1%;
 }
-.one {
+.three {
   width: 40%;
   height: auto;
 }
@@ -69,19 +68,30 @@ img.welcome {
 
 /*features*/
 .features {
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
-.flex-container-card1 {
+.card.f1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 40%;
   background-color: #D4E7C5;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
+.card.f2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  background-color: #D0CEDC;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  padding-top: 20px;
 }
 .flex-container-card2 {
   display: flex;
@@ -97,7 +107,7 @@ img.welcome {
   width: 65%;
 }
 .fimg {
-  width: 100%;
+  width: 80%;
 }
 h3 {
   margin-top: 20px;
@@ -142,27 +152,39 @@ h3 {
 }
 
 /*cards*/
+.slot {
+  margin-top: 20px;
+}
 .card1 {
-  margin-top: 20px;
   background-color: whitesmoke;
   border: 1px solid #aaaaaa;
 }
-.card2 {
-  margin-top: 20px;
-  background-color: whitesmoke;
-  border: 1px solid #aaaaaa;
+label {
+  margin-bottom: 0px;
 }
-.grid-container1 {
+/*kn*/.grid-container1 {
   display: grid;
   grid-template-columns: 75% auto;
   background-color: white;
   border-left: 5px solid #534A82;
 }
-.grid-container2 {
+/*paper*/.grid-container2 {
   display: grid;
   grid-template-columns: 75% auto;
   background-color: white;
   border-left: 5px solid #B85338;
+}
+/*panel*/.grid-container3 {
+  display: grid;
+  grid-template-columns: 75% auto;
+  background-color: white;
+  border-left: 5px solid #5DAA20;
+}
+/*poster*/.grid-container4 {
+  display: grid;
+  grid-template-columns: 75% auto;
+  background-color: white;
+  border-left: 5px solid #517D8A;
 }
 .col1 {
   padding-top: 20px;
@@ -233,6 +255,30 @@ a.event2 {
   border-bottom: 1px solid #aaaaaa;
   border-right: 1px solid #aaaaaa;
 }
+a.event3 {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-left: 5px solid #5DAA20;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+}
+a.event4 {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-left: 5px solid #517D8A;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+}
 /*toggle cards*/
 .collapse{
   cursor: pointer;
@@ -248,11 +294,17 @@ a.event2 {
   display:block;
 }
 /*hover card highlight*/
-div.card1:hover {
+div.keynote:hover {
   border: 1px solid #534A82;
 }
-div.card2:hover {
+div.paper:hover {
   border: 1px solid #B85338;
+}
+div.panel:hover {
+  border: 1px solid #5DAA20;
+}
+div.poster:hover {
+  border: 1px solid #517D8A;
 }
 a.event1:hover {
   border-top: 1px solid #534A82;
@@ -264,3 +316,84 @@ a.event2:hover {
   border-bottom: 1px solid #B85338;
   border-right: 1px solid #B85338;
 }
+a.event3:hover {
+  border-top: 1px solid #5DAA20;
+  border-bottom: 1px solid #5DAA20;
+  border-right: 1px solid #5DAA20;
+}
+a.event4:hover {
+  border-top: 1px solid #517D8A;
+  border-bottom: 1px solid #517D8A;
+  border-right: 1px solid #517D8A;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  body {
+    margin-bottom: 100px;
+  }
+  .descriptions {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+  }
+  .button {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+
+  /*welcome*/
+  .welcome {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .one {
+    width: 75%;
+    height: auto;
+    margin: 0px;
+  }
+  .two {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .three {
+    width: 75%;
+    height: auto;
+    margin: 0px;
+  }
+  img.welcome {
+    width: 100%;
+  }
+  .button {
+    margin: 0px;
+  }
+
+  /*features*/
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    background-color: #D4E7C5;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+  }
+  .card-body {
+    padding: 0px;
+  }
+
+  
+} 
