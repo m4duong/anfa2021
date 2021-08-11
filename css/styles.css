@@ -156,7 +156,6 @@ h3 {
   margin-top: 20px;
 }
 .card1 {
-  background-color: whitesmoke;
   border: 1px solid #aaaaaa;
 }
 label {
@@ -187,9 +186,7 @@ label {
   border-left: 5px solid #517D8A;
 }
 .col1 {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   align-items: center;
 }
 .col2 {
@@ -207,7 +204,7 @@ label {
 .cardtext {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
 .subtitle {
@@ -223,27 +220,23 @@ label {
   font-family: 'Open Sans', sans-serif;
 }
 .dropdown {
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 50px;
   padding-right: 20px;
 }
 .eventgrid {
   display: grid;
   grid-template-columns: 80px 25px auto;
 }
-a.event1 {
+.event1 {
   display: block;
   text-decoration: none;
   color: black;
   padding: 20px;
   margin-bottom: 20px;
   background-color: white;
-  border-left: 5px solid #534A82;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-  border-right: 1px solid #aaaaaa;
+  border: 1px solid #aaaaaa;
 }
-a.event2 {
+.event2 {
   display: block;
   text-decoration: none;
   color: black;
