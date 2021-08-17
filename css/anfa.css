@@ -597,32 +597,24 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 40%;
-  background-color: #D4E7C5;
+  height: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 25px;
-  padding-top: 20px;
 }
 .card.f2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 40%;
-  background-color: #D0CEDC;
+  height: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 25px;
-  padding-top: 20px;
 }
 
 .fimg {
-  width: 80%;
-  display: block;
-  margin: auto;
+  width: 100%;
 }
 
-.card.flex-container-card1 p, .card.flex-container-card1 h3{
+/*.card.flex-container-card1 p, .card.flex-container-card1 h3{
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -630,7 +622,7 @@ a {
 .card.flex-container-card1 .centeredimg p{
   margin-left: 0px;
   margin-right: 0px;
-}
+}*/
 
 #module_wikiplugin_2{
   margin: auto;
@@ -640,10 +632,10 @@ a {
   margin: auto;
 }
 
-.features {
+/*.features {
   display: flex;
   justify-content: center;
-}
+}*/
 
 .nav-tabs .nav-link{
  background-color: #f1f1f1;
@@ -666,16 +658,16 @@ a {
   margin-bottom: 1rem;
 }
 
-.welcome {
+/*.welcome {
   display: flex;
   flex-wrap: wrap;
-}
+}*/
 
 img.welcome{
-  width: 90%;
+  width: 50%;
 }
 
-.one {
+/*.one {
   width: 23%;
   height: auto;
   margin-right: 12px;
@@ -687,9 +679,9 @@ img.welcome{
 .three {
   width: 40%;
   height: auto;
-}
+}*/
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
   .welcome {
     display: flex;
     flex-wrap: wrap;
@@ -721,12 +713,11 @@ img.welcome{
 
   /*features*/
   
-  .card.f1 {
+  /*.card.f1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    background-color: #D4E7C5;
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
@@ -737,7 +728,6 @@ img.welcome{
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    background-color: #D0CEDC;
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
@@ -751,11 +741,74 @@ img.welcome{
   .card-body {
     padding: 0px;
   }
-}
+}*/
 
 .descriptions {
   font-size: 16px;
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
+}
+
+/*michelle's additions*/
+section {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 40px;
+}
+.heading {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #534A82;
+}
+/*welcome*/
+.video-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.video-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+/*features*/
+.cardpad {
+  margin-bottom: 10px;
+}
+/*schedule of events*/
+/*schedule tabs*/
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  font-family: sans-serif;
+}
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid #534A82;
+}
+.tabs__radio {
+  display: none;
+}
+.tabs__content {
+  order: 1;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  /**color: #009578;
+  border-bottom: 2px solid #009578;**/
+  color: white;
+  background-color: #534A82;
+}
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
 }

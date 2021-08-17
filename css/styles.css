@@ -6,17 +6,7 @@ section {
   margin-right: 10vw;
   margin-bottom: 40px;
 }
-.container {
-  margin: 0px;
-}
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 38px;
-  line-height: 44px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+.heading {
   border-bottom-style: solid;
   border-bottom-width: 5px;
   border-bottom-color: #534A82;
@@ -31,20 +21,6 @@ h1 {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
-}
-.button {
-  background-color: #FF2C35;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
 }
 
 /*welcome*/
@@ -66,54 +42,27 @@ img.welcome {
 }
 
 /*features*/
-.features {
-  display: flex;
-  justify-content: center;
-}
 .card.f1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background-color: #D4E7C5;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 25px;
-  padding-top: 20px;
 }
 .card.f2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D0CEDC;
+  height: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 25px;
-  padding-top: 20px;
-  height: 100%;
 }
-.flex-container-card2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 40%;
-  background-color: #D0CEDC;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 20px;
-}
-.centeredimg {
-  width: 65%;
+.cardpad {
+  margin-bottom: 10px;
 }
 .fimg {
-  width: 80%;
-}
-h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  width: 100%;
 }
 
 /*schedule of events*/
@@ -127,7 +76,7 @@ h3 {
 .tabs__label {
   padding: 10px 16px;
   cursor: pointer;
-  border: 1px solid #517D8A;
+  border: 1px solid #534A82;
 }
 .tabs__radio {
   display: none;
@@ -144,7 +93,7 @@ h3 {
   /**color: #009578;
   border-bottom: 2px solid #009578;**/
   color: white;
-  background-color: #517D8A;
+  background-color: #534A82;
 }
 .tabs__radio:checked + .tabs__label + .tabs__content {
   display: initial;
@@ -159,6 +108,9 @@ h3 {
 }
 label {
   margin-bottom: 0px;
+}
+.sesh-title {
+  margin: 0px;
 }
 .keynotebox {
   background-color: white;
@@ -186,82 +138,13 @@ label {
   align-items: center;
   justify-content: center;
 }
-.title {
-  font-size: 25px;
-  font-weight: 700;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0px;
-}
 .cardtext {
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-}
-.subtitle {
-  font-size: 22px;
-  font-weight: 700;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0px;
-}
-.seemore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Open Sans', sans-serif;
 }
 .dropdown {
   padding-left: 50px;
   padding-right: 20px;
-}
-.eventgrid {
-  display: grid;
-  grid-template-columns: 80px 25px auto;
-}
-.event1 {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  border: 1px solid #aaaaaa;
-}
-.event2 {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-left: 5px solid #B85338;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-  border-right: 1px solid #aaaaaa;
-}
-a.event3 {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-left: 5px solid #5DAA20;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-  border-right: 1px solid #aaaaaa;
-}
-a.event4 {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-left: 5px solid #517D8A;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-  border-right: 1px solid #aaaaaa;
 }
 /*toggle cards*/
 .collapse{
@@ -290,106 +173,3 @@ div.panel:hover {
 div.poster:hover {
   border: 1px solid #517D8A;
 }
-a.event1:hover {
-  border-top: 1px solid #534A82;
-  border-bottom: 1px solid #534A82;
-  border-right: 1px solid #534A82;
-}
-a.event2:hover {
-  border-top: 1px solid #B85338;
-  border-bottom: 1px solid #B85338;
-  border-right: 1px solid #B85338;
-}
-a.event3:hover {
-  border-top: 1px solid #5DAA20;
-  border-bottom: 1px solid #5DAA20;
-  border-right: 1px solid #5DAA20;
-}
-a.event4:hover {
-  border-top: 1px solid #517D8A;
-  border-bottom: 1px solid #517D8A;
-  border-right: 1px solid #517D8A;
-}
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  body {
-    margin-bottom: 100px;
-  }
-  .descriptions {
-    font-size: 16px;
-  }
-  .text {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px;
-  }
-  .button {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-
-
-  /*welcome*/
-  .welcome {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .one {
-    width: 75%;
-    height: auto;
-    margin: 0px;
-  }
-  .two {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .three {
-    width: 75%;
-    height: auto;
-    margin: 0px;
-  }
-  img.welcome {
-    width: 100%;
-  }
-  .button {
-    margin: 0px;
-  }
-
-  /*features*/
-  
-  .card.f1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    background-color: #D4E7C5;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    padding: 20px;
-  }
-  .card.f2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    background-color: #D0CEDC;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    padding: 20px;
-  }
-  .card-body {
-    padding: 0px;
-  }
-
-  
-} 
